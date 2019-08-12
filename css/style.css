@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700,900|Montserrat:400,700|Raleway:100,200,300,400,500,600,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer {
+  font-family: 'Montserrat';
+  line-height: 34px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.header-inner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__header {
+  width: 200px;
+  height: 80px;
+  background-image: url(../img/logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__btn {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.nav__btn:hover {
+  padding: 5px 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.header__text {
+  position: absolute;
+  top: 350px;
+  right: 170px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+  cursor: default;
+  z-index: 10;
+}
+
+.header__smile {
+  font-size: 220px;
+  font-weight: 100;
+}
+
+.header__costs {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/*SLIDER*/
+.slider__header {
+  width: 100%;
+  min-height: 1000px;
+  z-index: 1;
+}
+
+.slick-dots {
+  bottom: 110px;
+}
+
+.slick-dots li button:before {
+  font-size: 25px;
+  opacity: 1;
+}
+
+.slick-dots li {
+  margin: 0 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*MENU_NAV*/
+.nav__menu__cont {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 1000px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 11;
+}
+
+.nav__menu__cont-inner {
+  width: 100%;
+  height: 100%;
+  padding: 50px 190px 0 290px;
+}
+
+/*MENU_NAV - LOGO_CLOSE*/
+.menu__close__img {
+  float: right;
+}
+
+.nav__menu {
+  padding: 80px 190px 0 0;
+}
+
+.nav__menu li {
+  display: block;
+  max-width: 450px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 80px;
+}
+
+.nav__menu li a {
+  color: #626262;
+}
+
+.nav__menu li:hover a {
+  color: white;
+  text-decoration: underline;
+}
+
+.block__2-inner {
+  max-width: 100%;
+  min-height: 670px;
+}
+
+.block__2-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.block__2-header {
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 45px;
+}
+
+.thin__h2 {
+  font-weight: 200;
+}
+
+.thin__p {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.thin__p:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid black;
+  width: 80px;
+  margin: 50px 276px;
+}
+
+.block__2-main {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.block__2-main p {
+  padding-bottom: 50px;
+}
+
+.block__2-main p:nth-child(2) {
+  padding-bottom: 0;
+}
+
+.block__3-inner {
+  max-width: 100%;
+  min-height: 650px;
+}
+
+.block__3-content {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/block32_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block__3-slider-inner {
+  width: 50%;
+  min-height: 650px;
+  background-color: #ffe9e2;
+}
+
+.block__3-pic-inner {
+  width: 50%;
+  min-height: 650px;
+  background-color: transparent;
+}
+
+.block__3-pic {
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+}
+
+.block__3-slider-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 130px 195px 75px 100px;
+}
+
+.block__3-text {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  padding-bottom: 60px;
+}
+
+.block__3-author {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+
+.block__4-inner {
+  width: 100%;
+  min-height: 1160px;
+  padding: 125px 0 140px 0;
+}
+
+.block__4-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.block__4-header {
+  width: 100%;
+}
+
+.block__4-header:after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid black;
+  width: 80px;
+  margin-top: 40px;
+}
+
+.block__4-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 580px;
+  margin-top: 100px;
+}
+
+.bl4__reasons {
+  width: 50%;
+  min-height: 290px;
+  padding: 50px 100px 60px 50px;
+  border: 1px solid #eae9e7;
+}
+
+.bl4__reasons p {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+.bl4_anon {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main__btn {
+  background: none;
+  padding: 20px 40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
+.main__btn span {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+.main__btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.block__5-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 660px;
+  border: 1px solid #000;
+  padding: 200px 290px 165px 290px;
+  background-image: url(../img/block52_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block__5-content {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.block__5-content h2 {
+  margin-bottom: 70px;
+}
+
+.block__5-content p {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
