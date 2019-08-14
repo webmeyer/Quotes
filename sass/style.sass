@@ -348,7 +348,6 @@ footer
   width: 100%
   min-height: 1300px
   padding-top: 100px
-  border: 1px solid #000
   background-color: #eaeef1
 
 .bl6__grid
@@ -361,7 +360,6 @@ footer
 
 
 .bl6__photo1
-  background-color: red
   grid-template-rows: minmax(760px, auto)
   grid-row-start: 1
   grid-row-end: 3
@@ -373,7 +371,6 @@ footer
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 
 .bl6__photo2
-  background-color: yellowgreen
   grid-template-rows: minmax(370px, auto)
   grid-column-start: 2
   grid-column-end: 4
@@ -382,7 +379,6 @@ footer
 
 
 .bl6__photo3
-  background-color: #e6e6e6
   grid-template-rows: minmax(340px, auto)
   background-image: url(../img/gridblocks_3.jpg)
   background-position: bottom
@@ -390,7 +386,6 @@ footer
   background-repeat: no-repeat
 
 .bl6__photo4
-  background-color: burlywood
   grid-template-rows: minmax(340px, auto)
   background-image: url(../img/gridblocks_4.jpg)
   @include img_rules
@@ -450,6 +445,7 @@ footer
   cursor: default
 
 .bl6__photo3
+  background-color: #f0efee
   padding: 20px 85px 0 90px
 
 .bl6__photo3 span
@@ -486,3 +482,110 @@ footer
 
 .bl6__btn
   margin-top: 100px
+
+.footer
+  width: 100%
+  min-height: 635px
+  font-family: 'Montserrat'
+
+.big__footer
+  display: flex
+  justify-content: space-between
+  width: 100%
+  min-height: 540px
+  padding-top: 120px
+
+.bfooter__info
+  min-width: 250px
+  & h4
+    margin-bottom: 30px
+    font-size: 20px
+    font-weight: 700
+  & ul>li>a, p
+    font-size: 16px
+    font-weight: 400
+    color: black
+  & ul>li>a:hover
+    color: blueviolet
+
+.bft__adress
+  margin-bottom: 30px
+
+.ft_subscribe
+  min-width: 250px
+  & h4
+    margin-bottom: 10px
+    font-size: 20px
+    font-weight: 700
+  & p
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 30px
+    color: black
+  & form
+    margin-bottom: 20px
+  & input
+    width: 100%
+    padding: 15px
+    border: none
+    background-color: #f2f4f5
+  & input::placeholder
+    font-size: 15px
+    color: #cfcdc9
+
+.ft__btn
+  margin-top: 0
+  padding: 10px 25px
+
+.small__footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  min-height: 90px
+  background-color: #f2f4f5
+
+.ft__copyright
+  width: 50%
+  & span
+    font-size: 16px
+    font-weight: 400
+
+.ft__sprite
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  width: 50%
+  & ul
+    //min-height: 30px
+    font-size: 0
+  & ul>li
+    display: inline-block
+    width: 30px
+    height: 30px
+    margin-top: 20px
+    margin-right: 20px
+  & ul>li>a
+    display: block
+    width: 100%
+    height: 100%
+
+.ft-fb, .ft-tw, .ft-lnkid, .ft-ytb, .ft-ggl, .ft-pint, .ft-insta, .ft-mail
+  background-image: url(../img/sprite/spritesheet.png)
+
+.ft-fb
+  background-position: -2px -8px
+.ft-tw
+  background-position: -255px -5px
+.ft-lnkid
+  background-position: -130px -8px
+.ft-ytb
+  background-position: -297px -3px
+.ft-ggl
+  background-position: -38px -5px
+.ft-pint
+  background-position: -215px -7px
+.ft-insta
+  background-position: -89px -8px
+.ft-mail
+  background-position: -174px -5px
