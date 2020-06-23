@@ -1,2 +1,5 @@
-# quotes
-Landing Page (2 sliders, animated menu, adaptive)
+# Quotes
+
+Внешний вид макета 
+
+![alt text](/img/quotes.jpeg)
